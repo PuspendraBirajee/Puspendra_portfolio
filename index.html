@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puspendra Birajee</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-1" href="#" style="color: #3f396d"
+          ><span style="color: orange">P</span>uspendra</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"
+          onclick="scrollToContact()"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h2 style="color: #3f396d">
+            Hello! I am <br /><span class="c-orange">Puspendra Birajee</span>
+          </h2>
+          <p class="text-muted">
+            I'm a passionate Web Developer and Computer Science Engineering
+            student. <br />
+            <br />
+            I specialize in building dynamic, user-friendly websites and
+            applications. With experience in front-end and back-end development,
+            I love turning ideas into functional, visually appealing digital
+            experiences.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/profile1.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- Education & Experience Section starts-->
+    <section class="education mt-5" id="education">
+      <div class="heading text-center">
+        <h3>Education & Experience</h3>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <!-- Left Side: Education -->
+        <div
+          class="col-10 col-md-5 d-flex flex-column align-items-start"
+          data-aos="fade-right"
+        >
+          <div class="service-card">
+            <div class="content mt-3">
+              <h4>
+                <i class="fas fa-graduation-cap icon"></i> Bachelor of
+                Technology
+              </h4>
+              <p class="text-muted custom-paragraph">
+                Aditya Engineering College <br />
+                Surampalem, Andhra Pradesh, India | <br />2022 - 2026
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card mt-4">
+            <div class="content mt-3">
+              <h4><i class="fas fa-graduation-cap icon"></i> Intermediate</h4>
+              <p class="text-muted custom-paragraph">
+                Shiksha Deep Boarding Secondary School <br />
+                Biratnagar, Morang, Nepal | 2018 - 2020
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card mt-4">
+            <div class="content mt-3">
+              <h4>
+                <i class="fas fa-graduation-cap icon"></i> Secondary Education
+              </h4>
+              <p class="text-muted custom-paragraph">
+                Bal Bodh Secondary School <br />
+                Kanchanpur, Saptari, Nepal | 2005 - 2018
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertical Line -->
+        <div class="col-md-1 d-none d-md-block custom-indent">
+          <div class="vertical-line"></div>
+        </div>
+
+        <!-- Right Side: Experience -->
+        <div
+          class="col-10 col-md-4 d-flex flex-column align-items-start"
+          data-aos="fade-left"
+        >
+          <div class="service-card">
+            <div class="content mt-3">
+              <h4><i class="fas fa-briefcase icon"></i> DSA & Development</h4>
+              <p class="text-muted custom-paragraph">
+                Apna College, India | 2024 - 2025
+              </p>
+              <br />
+              <br />
+            </div>
+          </div>
+
+          <div class="service-card mt-4">
+            <div class="content mt-3">
+              <h4>
+                <i class="fas fa-briefcase icon"></i> Java Full Stack Intern
+              </h4>
+              <p class="text-muted custom-paragraph">
+                BrainOvision Solutions Pvt. Ltd, India | 2024
+              </p>
+              <br />
+            </div>
+          </div>
+
+          <div class="service-card mt-4">
+            <div class="content mt-3">
+              <h4>
+                <i class="fas fa-briefcase icon"></i> Front-End Web Development
+                Intern
+              </h4>
+              <p class="text-muted custom-paragraph">InternPe, India | 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education & Experience Section ends-->
+
+    <!-- skills section starts here -->
+    <section class="skill mt-5 py-5" id="skill">
+      <div class="row justify-content-center">
+        <div class="heading text-center">
+          <h3>Skills</h3>
+          <br />
+        </div>
+        <div class="col-10 col-md-7 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-center">
+            <!-- First Row (3 Items) -->
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress node">
+                  <span class="progress-value node-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Node.js & Express.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-4">
+            <!-- Second Row (3 Items) -->
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress mongodb">
+                  <span class="progress-value mongodb-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">MongoDB</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-4 col-12 col-sm-6 col-md-4 mb-4">
+              <div class="progress-card">
+                <div class="circular-progress java">
+                  <span class="progress-value java-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Java/C++</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Building & Learning <br />
+          Every Day
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.webp"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Front-End Development</h4>
+              <p class="text-muted">
+                Building responsive and interactive web interfaces using HTML,
+                CSS, JavaScript, and frameworks like React.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.webp"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Back-End Development</h4>
+              <p class="text-muted">
+                Exploring server-side technologies like Node.js, Express, and
+                databases to create dynamic web applications.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.webp"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Problem Solving & Debugging</h4>
+              <p class="text-muted">
+                Practicing data structures and algorithms to improve coding
+                skills and optimize web applications
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>About me</small>
+            <h3>Crafting Scalable & Interactive Web Solutions</h3>
+            <p class="text-muted">
+              I specialize in building responsive and dynamic web applications
+              using modern web technologies. From front-end design to back-end
+              development, I focus on creating seamless user experiences with
+              clean, efficient code.
+            </p>
+            <p class="text-muted">
+              With expertise in HTML, CSS, and JavaScript, along with a growing
+              knowledge of React.js, Node.js, Express.js, MongoDB, and SQL, I am
+              continuously improving my skills to develop full-stack
+              applications and manage databases efficiently.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Resume.pdf"
+                download="SampleCV"
+                style="text-decoration: none; color: #fff"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div
+        id="myBtnContainer"
+        class="text-center d-flex flex-wrap justify-content-center gap-3 mt-4"
+      >
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button
+          class="filter-item filter-btn btn btn-outline-primary"
+          data-filter="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-item filter-btn btn btn-outline-primary"
+          data-filter="game"
+        >
+          Game
+        </button>
+        <button
+          class="filter-item filter-btn btn btn-outline-primary"
+          data-filter="webapp"
+        >
+          Web App
+        </button>
+        <button
+          class="filter-item filter-btn btn btn-outline-primary"
+          data-filter="website"
+        >
+          Website
+        </button>
+        <button
+          class="filter-item filter-btn btn btn-outline-primary"
+          data-filter="brand"
+        >
+          Brand
+        </button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img
+                src="images/connect4game.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Connect Four Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/connect_four/"
+                  target="_blank"
+                  class="link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img src="images/travel.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Travel Agency Website</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/Travels/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 webapp all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img src="images/todo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">To-Do List Application</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/mineproject3/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img src="images/simonsay.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Simon Says Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/Simon_Say_Game/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img src="images/myntra.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Myntra Clone</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/Myntra_Clone/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="post col-md-4 all webapp col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
+            <div class="card">
+              <img src="images/calculator.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Calculator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a
+                  href="https://puspendrabirajee.github.io/interpe_calculators/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- Gallery Section Starts Here -->
+    <div class="bg-dark text-light py-5" id="gallery">
+      <h3 class="fw-bold text-center mb-4 display-3">Gallery</h3>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg1.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg2.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg3.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg5.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg6.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg8.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg9.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              src="./images/techimg10.jpg"
+              class="img-fluid rounded shadow-lg cursor-pointer"
+              onclick="openImage(this.src)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery Section Ends Here -->
+
+    <!-- Fullscreen Image Viewer -->
+    <div
+      id="fullscreenViewer"
+      class="d-none position-fixed top-0 start-0 w-100 h-100 bg-black bg-opacity-90 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="position-absolute top-0 end-0 m-3 d-flex gap-3">
+        <a
+          id="downloadImage"
+          class="btn btn-success px-3 py-2 fw-bold text-white"
+          download
+          >Download</a
+        >
+        <button
+          class="btn btn-danger px-3 py-2 fw-bold text-white"
+          onclick="closeImage()"
+        >
+          X
+        </button>
+      </div>
+      <img id="fullscreenImage" class="img-fluid rounded" />
+    </div>
+    <!-- Fullscreen Image Viewer ends -->
+
+    <!-- certificates section start here -->
+
+    <div class="bg-dark text-light py-5">
+      <h2 class="fw-bold text-center mb-4 display-3">Certifications</h2>
+      <div class="container overflow-hidden">
+        <div class="scrolling-container">
+          <div class="d-flex flex-nowrap gap-3">
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/apna_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/apna_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Apna College Certification
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/cisco_c_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/cisco_c_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Cisco C Programming
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/cisco_c++_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/cisco_c++_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Cisco C++ Programming
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/cisco_python_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/cisco_python_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Cisco Python Programming
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/hackathon.jpg"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/hackathon.jpg')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Hackathon Certificate
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/html_and_css.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/html_and_css.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                IT Specialist HTML/CSS
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/iee.jpg"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/iee.jpg')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                IEEE Hydrabad
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/innovix.jpg"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/innovix.jpg')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                INNOVIX Aditya University
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/it_specialist_python.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/it_specialist_python.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                IT Specialist Python
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/java_edx_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/java_edx_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Java edx
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/linux_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/linux_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Linux Certificatin
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/merit_certificate.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/merit_certificate.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Merit Certificate AU
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/python_IBM_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/python_IBM_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Python IBM
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/redhat_page_1.png"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/redhat_page_1.png')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Python Redhat
+              </div>
+            </div>
+            <div class="card" style="width: 16rem">
+              <img
+                src="images/skill.jpg"
+                class="card-img-top cursor-pointer"
+                onclick="openPreview('images/skill.jpg')"
+              />
+              <div class="card-body bg-warning text-white text-center">
+                Andhra Skill
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen Preview -->
+    <div
+      id="preview"
+      class="d-none position-fixed top-0 start-0 w-100 h-100 bg-black bg-opacity-90 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="position-absolute top-0 end-0 m-3 d-flex gap-3">
+        <a id="downloadLink" class="btn btn-success px-3 py-2 fw-bold" download
+          >Download</a
+        >
+        <button
+          class="btn btn-danger px-3 py-2 fw-bold"
+          onclick="closePreview()"
+        >
+          X
+        </button>
+      </div>
+      <img id="previewImg" class="img-fluid rounded" />
+    </div>
+    <!-- certification sections ends here  -->
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="2000"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Puspendra is an exceptional developer with a deep
+                        understanding of modern web technologies. His
+                        problem-solving skills and attention to detail truly set
+                        him apart. Highly recommended!
+                      </p>
+                      <h4>Sanjit Das</h4>
+                      <small class="fs-6 text-muted"
+                        >Web Developer Enthusiast</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Working with Puspendra was a fantastic experience. His
+                        ability to turn complex ideas into functional and
+                        visually stunning web applications is remarkable. A true
+                        professional!
+                      </p>
+                      <h4>Sai Bhanu Alamuri</h4>
+                      <small class="fs-6 text-muted"
+                        >Open Source Contributor</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Puspendra delivered high-quality work ahead of
+                        deadlines. His expertise in front-end and back-end
+                        development makes him a valuable asset to any project!
+                      </p>
+                      <h4>Md. Sufiyan</h4>
+                      <small class="fs-6 text-muted"
+                        >Small Business Owner</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        I had the pleasure of collaborating with Puspendra on
+                        multiple projects. His coding skills and problem-solving
+                        abilities are outstanding. He is always open to feedback
+                        and delivers great results.
+                      </p>
+                      <h4>Satish Yadav</h4>
+                      <small class="fs-6 text-muted">B.Tech Student</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Puspendra’s ability to write clean, efficient, and
+                        scalable code is impressive. His enthusiasm for learning
+                        new technologies makes him a great team player.
+                      </p>
+                      <h4>Aditya Jha</h4>
+                      <small class="fs-6 text-muted"
+                        >Hackathon Participant</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/travel.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Puspendra Birajee</small
+              ><span class="ms-3">Jan 5,2025</span>
+              <h4 class="card-title">
+                <a href="">Travel Agency Website</a>
+              </h4>
+              <p class="text-muted">
+                A fully functional travel agency website with booking features,
+                service listings.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn link"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/todo.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Puspendra Birajee</small
+              ><span class="ms-3">Feb 6,2025</span>
+              <h4 class="card-title">
+                <a href="">To-Do List Application</a>
+              </h4>
+              <p class="text-muted">
+                A simple and intuitive to-do list app for managing daily tasks
+                efficiently.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn link"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/simonsay.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Puspendra Birajee</small
+              ><span class="ms-3">Mar 1,2025</span>
+              <h4 class="card-title">
+                <a href="">Simon Says Game</a>
+              </h4>
+              <p class="text-muted">
+                A fun memory game where players follow an increasing sequence of
+                colors and sounds.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn link"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div
+          class="modal fade"
+          id="exampleModal1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="btn-c rounded-pill"
+                data-bs-dismiss="modal"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
+
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/travel.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="content mt-3">
+                  <small>By Puspendra Birajee</small
+                  ><span class="text-muted ms-2">Jan 5,2025</span>
+                  <h4 class="card-title mt-3">Travel Agency Website</h4>
+                  <div class="social-links mt-4">
+                    <button
+                      class="rounded-pill linkdin"
+                      onclick="openLink('https://www.linkedin.com/in/puspendrabirajee/')"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button
+                      class="rounded-pill whatsapp"
+                      onclick="openLink('https://wa.me/916387629947')"
+                    >
+                      <i class="bi bi-whatsapp"></i>
+                    </button>
+                    <button
+                      class="rounded-pill instagram"
+                      onclick="openLink('https://www.instagram.com/rocker_puspendra?igshid=ZDdkNTZiNTM%3D')"
+                    >
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                  </div>
+                  <h3>Introduction</h3>
+                  <p class="text-muted mt-3">
+                    Planning a trip should be as exciting as the journey itself!
+                    The Travel Agency Website is designed to simplify travel
+                    bookings, offering a smooth and interactive experience for
+                    users. Whether you're booking flights, hotels, or vacation
+                    packages, this platform ensures a hassle-free process.
+                  </p>
+                  <h3>Key Features</h3>
+                  <p class="text-muted mt-3">
+                    ✔️ <b>User-Friendly Booking Forms -</b> Enter your
+                    destination, travel dates, and number of guests
+                    effortlessly. <br />
+                    ✔️ <b>Interactive Date Picker –</b> Select travel dates with
+                    ease using a modern calendar interface. <br />
+                    ✔️ <b>Responsive UI – </b> A sleek, professional design that
+                    works seamlessly on desktops, tablets, and mobile devices.
+                    <br />
+                    ✔️ <b>Elegant Aesthetics –</b> Monochrome travel-themed
+                    visuals with a professional touch. <br />
+                    ✔️ <b>Secure & Fast –</b> Ensures a quick booking process
+                    without unnecessary steps. <br />
+                  </p>
+                  <h3>Why I Built This</h3>
+                  <p class="text-muted mt-3">
+                    The travel industry is booming, and many users struggle with
+                    slow, outdated booking websites. I created this project to
+                    deliver a modern, user-friendly, and fast travel booking
+                    experience with an intuitive layout.
+                  </p>
+                  <h3>Challenges & Learnings</h3>
+                  <p class="text-muted mt-3">
+                    <b>Optimizing the User Experience:</b> I worked on keeping
+                    the interface clutter-free. <br />
+                    <b>Responsive Design:</b> Ensuring the website looks great
+                    on all devices. <br />
+                    <b>Form Validation:</b> Implementing proper validation for
+                    user input fields.
+                  </p>
+                  <h4>📌 Check out the project live here:</h4>
+                  <a
+                    href="https://puspendrabirajee.github.io/Travels/"
+                    style="text-decoration: none"
+                    >Travel Agency Website</a
+                  >
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave a Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="btn-c rounded-pill"
+                data-bs-dismiss="modal"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
+
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/todo.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="content mt-3">
+                  <small>By Puspendra Birajee</small
+                  ><span class="text-muted ms-2 ms-md-0">&nbsp;Feb 6,2025</span>
+                  <h4 class="card-title mt-3">To-Do List Application</h4>
+                  <div class="social-links mt-4">
+                    <button
+                      class="rounded-pill linkdin"
+                      onclick="openLink('https://www.linkedin.com/in/puspendrabirajee/')"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button
+                      class="rounded-pill whatsapp"
+                      onclick="openLink('https://wa.me/916387629947')"
+                    >
+                      <i class="bi bi-whatsapp"></i>
+                    </button>
+                    <button
+                      class="rounded-pill instagram"
+                      onclick="openLink('https://www.instagram.com/rocker_puspendra?igshid=ZDdkNTZiNTM%3D')"
+                    >
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                  </div>
+                  <h3>Introduction</h3>
+                  <p class="text-muted">
+                    Staying organized is essential, and a
+                    <b>To-Do List Application</b> helps users manage daily tasks
+                    efficiently. This app is designed for simplicity, ensuring
+                    users can add, track, and delete tasks with ease.
+                  </p>
+                  <h3>Key Features</h3>
+                  <p class="text-muted">
+                    <b>✔️ Simple Task Management –</b> Add, mark, and delete
+                    tasks in a single click. <br />
+                    <b>✔️ Minimalist UI – </b> Clean, distraction-free interface
+                    with a soft color scheme. <br />
+                    <b>✔️ Interactive Checkboxes –</b> Users can tick off
+                    completed tasks. <br />
+                    <b>✔️ Persistent Data –</b> Saves tasks for later use,
+                    preventing accidental data loss. <br />
+                    <b>✔️ Responsive Design –</b> Works smoothly on all devices.
+                  </p>
+                  <h3>Why I Built This</h3>
+                  <p class="text-muted">
+                    We all have things to do, but keeping track of them can be
+                    overwhelming. I built this app to create a
+                    <b>simple, no-nonsense task manager</b> that anyone can use
+                    without complications.
+                  </p>
+                  <h3>Challenges & Learnings</h3>
+                  <p class="text-muted">
+                    <b>Storing Tasks Efficiently: </b>Making sure tasks remain
+                    saved across page reloads. <br />
+                    <b>UI Simplicity: </b>Keeping the interface clean and easy
+                    to navigate. <br />
+                    <b>Mobile Optimization: </b>Ensuring users can add tasks
+                    quickly on mobile devices.
+                  </p>
+                  <h3>📌 Check out the project live here:</h3>
+                  <a
+                    href="https://puspendrabirajee.github.io/mineproject3/"
+                    target="_blank"
+                    style="text-decoration: none"
+                    >To-Do List Application</a
+                  >
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave a Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="btn-c rounded-pill"
+                data-bs-dismiss="modal"
+              >
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
+
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/simonsay.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="content mt-3">
+                  <small>By Puspendra Birajee</small
+                  ><span class="text-muted ms-2 ms-md-0">&nbsp;Mar 1,2025</span>
+                  <h4 class="card-title mt-3">Simon Says Game</h4>
+                  <div class="social-links mt-4">
+                    <button
+                      class="rounded-pill linkdin"
+                      onclick="openLink('https://www.linkedin.com/in/puspendrabirajee/')"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button
+                      class="rounded-pill whatsapp"
+                      onclick="openLink('https://wa.me/916387629947')"
+                    >
+                      <i class="bi bi-whatsapp"></i>
+                    </button>
+                    <button
+                      class="rounded-pill instagram"
+                      onclick="openLink('https://www.instagram.com/rocker_puspendra?igshid=ZDdkNTZiNTM%3D')"
+                    >
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                  </div>
+                  <h3>Introduction</h3>
+                  <p class="text-muted">
+                    <b>Simon Says</b> is a classic memory-based game that tests
+                    your ability to remember and follow patterns. The game
+                    increases in difficulty as the sequences get longer, making
+                    it an engaging way to challenge your memory skills.
+                  </p>
+                  <h3>Key Features</h3>
+                  <p class="text-muted">
+                    <b>✔️ Colorful Game Interface – </b>Bright, vibrant colors
+                    make the game visually appealing. <br />
+                    <b>✔️ Interactive Sound Effects – </b>Each button press
+                    produces unique sound feedback. <br />
+                    <b>✔️ Dynamic Difficulty – </b>The sequence gets longer with
+                    each correct attempt. <br />
+                    <b>✔️ Game Over Notification – </b>Notifies the user of
+                    their final score and allows restarting. <br />
+                    <b>✔️ Responsive & Smooth Animations – </b>Works seamlessly
+                    on both desktop and mobile.
+                  </p>
+                  <h3>Why I Built This</h3>
+                  <p class="text-muted">
+                    I wanted to create a <b> fun and interactive game</b> that
+                    challenges players in an engaging way. Simon Says is a great
+                    way to sharpen memory and reaction time, and I enjoyed
+                    bringing this nostalgic game to life.
+                  </p>
+                  <h3>Challenges & Learnings</h3>
+                  <p class="text-muted">
+                    <b>Managing Game Logic: </b>Ensuring correct sequence
+                    recognition and progression. <br />
+                    <b>UI & Sound Synchronization: </b>Making sure colors and
+                    sounds align perfectly. <br />
+                    <b>Performance Optimization: </b>Keeping the game smooth
+                    across all devices.
+                  </p>
+                  <h3>📌 Check out the project live here:</h3>
+                  <a
+                    href="https://puspendrabirajee.github.io/Simon_Say_Game/"
+                    target="_blank"
+                    style="text-decoration: none"
+                    >Simon Says Game</a
+                  >
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave a Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Kakinada, Andhra Pradesh, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 6387629947</p>
+            </div>
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+977 9827030764</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>puspendrabirajee@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>puspendrabirajee.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#education">Education</a>
+        <div class="vr"></div>
+        <a href="#skill">Skills</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Social links -->
+      <div
+        class="social-links mt-5 d-flex flex-wrap justify-content-center gap-3"
+        data-aos="fade-up"
+      >
+        <button
+          class="rounded-pill linkdin"
+          onclick="openLink('https://www.linkedin.com/in/puspendrabirajee/')"
+        >
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button
+          class="rounded-pill github"
+          onclick="openLink('https://github.com/PuspendraBirajee')"
+        >
+          <i class="bi bi-github"></i>
+        </button>
+        <button
+          class="rounded-pill instagram"
+          onclick="openLink('https://www.instagram.com/rocker_puspendra?igshid=ZDdkNTZiNTM%3D')"
+        >
+          <i class="bi bi-instagram"></i>
+        </button>
+        <button
+          class="rounded-pill whatsapp"
+          onclick="openLink('https://wa.me/916387629947')"
+        >
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button
+          class="rounded-pill facebook"
+          onclick="openLink('https://www.facebook.com/puspendra.63')"
+        >
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button
+          class="rounded-pill twitter"
+          onclick="openLink('https://x.com/Puspendra22?t=rbqSqJDWrwMd6vu0bEa9aw&s=09')"
+        >
+          <i class="bi bi-twitter"></i>
+        </button>
+      </div>
+
+      <hr class="text-muted my-4" />
+
+      <p>Copyright &copy; 2025 Puspendra | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
