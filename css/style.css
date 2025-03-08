@@ -298,9 +298,6 @@ img.cursor-pointer {
     transform: translateX(-50%);
   }
 }
-#preview {
-  z-index: 1050; /* Ensure it stays above navbar */
-}
 
 /* open certificate image in fixed size */
 /* Hide scrollbar but keep scrolling functionality */
@@ -332,7 +329,7 @@ img.cursor-pointer {
   background: rgba(0, 0, 0, 0.9);
   align-items: center;
   justify-content: center;
-  z-index: 1050;
+  z-index: 1050; /* Ensure it stays above navbar */
   flex-direction: column;
 }
 
@@ -384,6 +381,7 @@ body.no-scroll {
 }
 
 /* testimonial section starts */
+
 .testimonial img:hover {
   transform: scale(1.2, 1.2);
   transition-duration: 1s;
