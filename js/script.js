@@ -218,3 +218,65 @@ function openPreview(imgSrc) {
 function closePreview() {
   document.getElementById("preview").classList.add("d-none");
 }
+
+// send message
+// Initialize EmailJS with your Public Key
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("rTmE5hj3JT-jbXU7y"); // Correct Public Key
+
+  // Select all forms with class 'contact-form'
+  const contactForms = document.querySelectorAll(".contact-form");
+
+  contactForms.forEach((form) => {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Get user input values
+      const userName = form.querySelector("[name='name']").value;
+      const userEmail = form.querySelector("[name='email']").value;
+      const userMobile = form.querySelector("[name='mobile']").value;
+      const userMessage = form.querySelector("[name='message']").value;
+
+      // Debugging: Check if values are correctly captured
+      console.log("Form Data:", {
+        name: userName,
+        email: userEmail,
+        mobile: userMobile,
+        message: userMessage,
+      });
+
+      if (!userName || !userEmail || !userMobile || !userMessage) {
+        alert("⚠️ Please fill out all fields.");
+        return;
+      }
+
+      // 📨 **Send Message to Admin using `template_kkbenxq`**
+      emailjs
+        .send("service_gfmzoej", "template_kkbenxq", {
+          name: userName,
+          email: userEmail,
+          mobile: userMobile,
+          message: userMessage,
+        })
+        .then(function (response) {
+          alert("✅ Message sent to Admin successfully!");
+          console.log("EmailJS Response:", response);
+
+          // 📨 **Send Auto-reply to User using `template_420ko5l`**
+          return emailjs.send("service_gfmzoej", "template_420ko5l", {
+            to_email: userEmail,
+            name: userName,
+          });
+        })
+        .then(function () {
+          console.log("✅ Auto-reply sent to user successfully!");
+        })
+        .catch(function (error) {
+          alert("❌ Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+        });
+
+      form.reset(); // Clear form fields after submission
+    });
+  });
+});

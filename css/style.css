@@ -3,10 +3,15 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
+  width: 100%;
 }
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+main,
+.content-wrapper {
+  overflow-x: hidden;
 }
 
 /* styling menu icon */
@@ -276,7 +281,7 @@ img.cursor-pointer {
   width: 450%; /* Adjust width to fit all cards */
   overflow: hidden;
   white-space: nowrap;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .d-flex.flex-nowrap {
@@ -571,4 +576,17 @@ footer .link-group a:hover {
 .icon {
   font-size: 24px;
   color: #00ffff;
+}
+
+/* mobile device */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .your-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
