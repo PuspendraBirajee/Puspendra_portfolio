@@ -109,8 +109,12 @@ main,
   transform-origin: bottom left;
 }
 /* adding animation to home section image  */
-.home img {
+/* .home img {
   animation: floatimg 4s ease-in-out infinite;
+  width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  z-index: 10;
 }
 
 @keyframes floatimg {
@@ -122,6 +126,72 @@ main,
   }
   100% {
     transform: translateX(0);
+  }
+} */
+/* Container for the border + image */
+.rainbow-border {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8px; /* space for border */
+  animation: floatimg 4s ease-in-out infinite; /* float both border + img */
+}
+
+/* Rotating rainbow border */
+.rainbow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 8px; /* border thickness */
+  background: conic-gradient(
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff,
+    #ff1493,
+    #00ffff,
+    #ffd700,
+    #ff0000
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: spin 6s linear infinite; /* rotates only border */
+  z-index: 0;
+}
+
+/* Profile image */
+.profile-img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1; /* above border */
+}
+
+/* Floating animation */
+@keyframes floatimg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Rotating animation for border */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 

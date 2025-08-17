@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof Typed !== "undefined") {
+    new Typed(".typed-name", {
+      strings: [
+        '<span style="color:#ff5733;">A Software Engineer</span>',
+        '<span style="color:#00bfff;">A Developer</span>',
+        '<span style="color:#28a745;">A Designer</span>',
+        '<span style="color:#ff33cc;">A UI/UX Designer</span>',
+        '<span style="color:#ffa500;">A Critical Thinker</span>',
+        '<span style="color:#3f51b5;">A Learner</span>',
+        '<span style="color:#8e44ad;">A Dreamer & Doer</span>',
+      ],
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 1200,
+      loop: true,
+      contentType: "html",
+    });
+  }
+});
+
 // to navigate to contact section when clicked on contact in header
 function scrollToContact() {
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });

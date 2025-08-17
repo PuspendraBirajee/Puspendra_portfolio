@@ -46,6 +46,8 @@
 
     <!-- send message emailjs -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <!-- navbar starts -->
@@ -107,6 +109,7 @@
       </div>
     </nav>
     <!-- navbar ends here -->
+
     <main>
       <!-- home section starts  -->
       <section class="home pt-5 pb-5" id="home">
@@ -117,7 +120,9 @@
             data-aos="slide-right"
           >
             <h2 style="color: #3f396d">
-              Hello! I am <br /><span class="c-orange">Puspendra Birajee</span>
+              Hello! I am <br /><span class="c-orange">Puspendra Birajee</span
+              ><br />
+              <span class="typed-name"></span>
             </h2>
             <p class="text-muted">
               I'm a passionate Web Developer and Computer Science Engineering
@@ -160,17 +165,13 @@
             ></div>
 
             <!-- Profile image -->
-            <img
-              src="images/profile.jpg"
-              alt="Profile"
-              class="position-relative rounded-circle border border-white shadow-lg"
-              style="
-                width: 16rem;
-                height: 16rem;
-                object-fit: cover;
-                z-index: 10;
-              "
-            />
+            <div class="rainbow-border">
+              <img
+                src="images/profile.jpg"
+                alt="Profile"
+                class="profile-img position-relative rounded-circle border border-white shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
